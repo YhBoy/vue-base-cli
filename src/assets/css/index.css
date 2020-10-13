@@ -1,0 +1,141 @@
+/*
+ * User: haixu
+ * Date: 2020/10/8
+ * Time: 11:18
+ */
+
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/* 修改滚动条宽度和颜色开始 */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+.clearfix:after {
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+/* 单行文字点点点 */
+.one-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 文字换行 */
+.two-ellipsis {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* flex 水平垂直居中 */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex 垂直居中，分布与两端 */
+.flex-spacebetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 选项卡开始 */
+
+.nav-tab {
+    width: 100%;
+    background: #fff;
+    padding: 30px 0 10px 0;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+
+.nav-tab-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-tab-item-name {
+    font-size: 32px;
+    color: #303131;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+}
+
+.nav-tab-item-active {
+    color: #2eaf71;
+    border-bottom: 4px solid #2eaf71;
+}
+
+/* 选项卡结束 */
+/* 主按钮 */
+
+.btn-primary {
+    width: 160px;
+    height: 64px;
+    background: #2eaf71;
+    border-radius: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 无数据展示页 */
+
+.no-data {
+    text-align: center;
+}
+
+.no-wrap {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.no-data image {
+    width: 220px;
+    height: 220px;
+}
+
+.no-title {
+    font-size: 32px;
+    color: #303131;
+    margin-top: 24px;
+}
+
+/* 刷新按钮 */
+.btn-refresh {
+    width: 200px;
+    height: 72px;
+    line-height: 72px;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    font-size: 32px;
+    color: #979797;
+    margin: 0 auto;
+    margin-top: 30px;
+}
