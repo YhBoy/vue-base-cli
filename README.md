@@ -1,5 +1,5 @@
 # training_system_h5
-伟业学堂H5
+H5  基本架构
 
 依赖安装：
 yarn install
